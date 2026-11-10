@@ -1,0 +1,22 @@
+# Approved by Aaron 2026-11-10. Rebuilds root storms.json daily from SPC filtered storm reports only.
+# Free on public repos; no API keys or accounts. Uses the built-in GITHUB_TOKEN.
+name: Refresh recent storms
+on:
+  schedule:
+    - cron: "30 13 * * *"   # 13:30 UTC daily (7:30 AM CST / 8:30 AM CDT), after SPC finalizes the prior convective day
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python scripts/build_storms.py storms.json
+      - run: |
+          git config user.name "storms-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add storms.json
+          git diff --cached --quiet || (git commit -m "Refresh recent storms (SPC)" && git push)
