@@ -1,0 +1,41 @@
+{
+ "generated": "2026-11-12",
+ "source": "Supabase rpc_mail_order('counts') over v_storm_event_mail_list ([mail3]); records = owner + mailing address inside the >=1.00\" MRMS MESH band at the property's own cell; launch counties = MetroGIS public-domain only",
+ "items": [
+  {
+   "county": "Dakota",
+   "records": 641,
+   "run_key": "SEV-2026-10-28-MN",
+   "event_date": "2026-10-28",
+   "records_ge175": 39
+  },
+  {
+   "county": "Anoka",
+   "records": 1235,
+   "run_key": "SEV-2026-06-19-MN",
+   "event_date": "2026-06-19",
+   "records_ge175": 0
+  },
+  {
+   "county": "Hennepin",
+   "records": 1271,
+   "run_key": "SEV-2026-06-19-MN",
+   "event_date": "2026-06-19",
+   "records_ge175": 0
+  },
+  {
+   "county": "Ramsey",
+   "records": 5640,
+   "run_key": "SEV-2026-06-19-MN",
+   "event_date": "2026-06-19",
+   "records_ge175": 0
+  },
+  {
+   "county": "Washington",
+   "records": 396,
+   "run_key": "SEV-2026-06-19-MN",
+   "event_date": "2026-06-19",
+   "records_ge175": 0
+  }
+ ]
+}
