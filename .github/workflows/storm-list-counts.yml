@@ -1,0 +1,25 @@
+# [mail4] Refreshes storm-lists/counts.json (order-page record counts, no PII) once a day from the public Supabase
+# endpoint storm-list-counts. Same pattern as storms.yml: no API keys, built-in GITHUB_TOKEN only. Commits only when counts change.
+name: Refresh storm-list counts
+on:
+  schedule:
+    - cron: "45 13 * * *"   # 13:45 UTC daily (7:45 AM CST), after the storms refresh
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  counts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch counts
+        run: |
+          curl -fsS --retry 3 https://oahqjxkmoxahfgmgyciq.supabase.co/functions/v1/storm-list-counts -o /tmp/counts.json
+          python3 -c "import json;d=json.load(open('/tmp/counts.json'));assert isinstance(d.get('items'),list) and d['items'], 'empty counts'"
+          cp /tmp/counts.json storm-lists/counts.json
+      - name: Commit if changed
+        run: |
+          git config user.name "storms-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add storm-lists/counts.json
+          git diff --cached --quiet -- storm-lists/counts.json || (git commit -m "Refresh storm-list counts" && git push)
