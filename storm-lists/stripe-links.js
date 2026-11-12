@@ -1,11 +1,21 @@
-// Paste each Stripe Payment Link URL between the quotes (dashboard.stripe.com > Payment Links > Copy link).
-// Leave a value empty and that button falls back to ordering by email. Nothing else on the site needs editing.
+// Stripe Payment Links for adculmen.com/storm-lists/order. Seller: Forensic Roofing Sciences LLC (acct_1UVtAlKIQCtKtQQl).
+// MODE: TEST (Stripe sandbox, buy.stripe.com/test_...). No real money moves. Swap to the live links once the account is activated.
+// Leave a value empty and that button falls back to ordering by email.
+window.STRIPE_MODE = "test";
 window.STRIPE_LINKS = {
-  record: "",               // $0.20 per record, quantity adjustable 1,250-9,999
-  record_10k: "",           // $0.15 per record, quantity adjustable 10,000-49,999
-  record_50k: "",           // $0.10 per record, quantity adjustable 50,000+
-  sub_monthly: "",          // $149 / month
-  sub_quarterly: "",        // $399 / 3 months
-  sub_annual_region: "",    // $1,490 / year
-  sub_annual_statewide: ""  // $3,990 / year
+  record: "https://buy.stripe.com/test_7sY8wQb6KaFd5QwacS5EY00",               // $0.20 per record, quantity 1,250-9,999
+  record_10k: "https://buy.stripe.com/test_fZu3cw1wacNl0wc5WC5EY01",           // $0.15 per record, quantity 10,000-49,999
+  record_50k: "https://buy.stripe.com/test_bJe28s3EiaFdfr6fxc5EY02",           // $0.10 per record, quantity 50,000+
+  sub_monthly: "https://buy.stripe.com/test_aFa6oI8YCaFd3Iocl05EY03",          // $149 / month
+  sub_quarterly: "https://buy.stripe.com/test_7sY28s2Ae9B94MsacS5EY04",        // $399 / 3 months
+  sub_annual_region: "https://buy.stripe.com/test_3cI28scaO14D1Agfxc5EY05",    // $1,490 / year
+  sub_annual_statewide: "https://buy.stripe.com/test_8x28wQfn08x56UAcl05EY06"  // $3,990 / year
 };
+// While MODE is "test", show a notice on the order page so no buyer mistakes a sandbox checkout for a real order.
+if (window.STRIPE_MODE === "test") document.addEventListener("DOMContentLoaded", function () {
+  var m = document.querySelector("main") || document.body, d = document.createElement("div");
+  d.setAttribute("role", "note");
+  d.style.cssText = "border:1px solid #c8a45a;background:#2a2416;color:#f3e6c4;padding:10px 14px;margin:12px auto;max-width:960px;font-size:14px;line-height:1.45";
+  d.textContent = "Card checkout is in TEST mode this week: no card is charged and no list is delivered. To order now, email aaron@forensicroofingsciences.com or call (651) 349-4377 and we will invoice you.";
+  m.insertBefore(d, m.firstChild);
+});
