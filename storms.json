@@ -1,8 +1,53 @@
 {
- "generated": "2026-11-10",
- "window": "2026-09-11 to 2026-11-10",
+ "generated": "2026-11-12",
+ "window": "2026-09-13 to 2026-11-12",
  "note": "Territory storms from SPC filtered storm reports (NWS local storm reports). Times Central; dates are local (Central) dates.",
  "items": [
+  {
+   "date": "2026-11-11",
+   "dateLabel": "Nov 11, 2026",
+   "state": "Indiana",
+   "timeStart": "4:20 PM CST",
+   "timeEnd": "5:58 PM CST",
+   "location": "Riley, Vigo Co.",
+   "maxHailIn": 1.75,
+   "hailAt": "Riley, Vigo Co., 4:29 PM CST",
+   "maxGustMph": null,
+   "gustAt": null,
+   "hailReports": 7,
+   "windReports": 1,
+   "tornadoReports": 1,
+   "counties": [
+    "Gibson",
+    "Posey",
+    "Vigo",
+    "Warrick"
+   ],
+   "countyCount": 4,
+   "source": "SPC storm reports (NWS LSRs)",
+   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261111_rpts.html"
+  },
+  {
+   "date": "2026-11-11",
+   "dateLabel": "Nov 11, 2026",
+   "state": "Iowa",
+   "timeStart": "7:48 AM CST",
+   "timeEnd": "8:25 AM CST",
+   "location": "1 NW Maysville, Scott Co.",
+   "maxHailIn": 1.0,
+   "hailAt": "1 NW Maysville, Scott Co., 7:48 AM CST",
+   "maxGustMph": 61,
+   "gustAt": "1 NW Eldridge, Scott Co.",
+   "hailReports": 1,
+   "windReports": 2,
+   "tornadoReports": 0,
+   "counties": [
+    "Scott"
+   ],
+   "countyCount": 1,
+   "source": "SPC storm reports (NWS LSRs)",
+   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261111_rpts.html"
+  },
   {
    "date": "2026-11-02",
    "dateLabel": "Nov 2, 2026",
@@ -242,51 +287,6 @@
    "countyCount": 2,
    "source": "SPC storm reports (NWS LSRs)",
    "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261008_rpts.html"
-  },
-  {
-   "date": "2026-10-07",
-   "dateLabel": "Oct 7, 2026",
-   "state": "Michigan",
-   "timeStart": "5:40 PM CDT",
-   "timeEnd": "6:11 PM CDT",
-   "location": null,
-   "maxHailIn": null,
-   "hailAt": null,
-   "maxGustMph": null,
-   "gustAt": null,
-   "hailReports": 0,
-   "windReports": 4,
-   "tornadoReports": 0,
-   "counties": [
-    "Antrim",
-    "Crawford",
-    "Kalkaska"
-   ],
-   "countyCount": 3,
-   "source": "SPC storm reports (NWS LSRs)",
-   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261007_rpts.html"
-  },
-  {
-   "date": "2026-09-28",
-   "dateLabel": "Sep 28, 2026",
-   "state": "South Dakota",
-   "timeStart": "9:31 AM CDT",
-   "timeEnd": "4:46 PM CDT",
-   "location": "10 N Belle Fourche, Butte Co.",
-   "maxHailIn": 1.0,
-   "hailAt": "10 N Belle Fourche, Butte Co., 4:46 PM CDT",
-   "maxGustMph": 77,
-   "gustAt": "5 ESE Kenel, Campbell Co.",
-   "hailReports": 1,
-   "windReports": 2,
-   "tornadoReports": 0,
-   "counties": [
-    "Butte",
-    "Campbell"
-   ],
-   "countyCount": 2,
-   "source": "SPC storm reports (NWS LSRs)",
-   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/260928_rpts.html"
   },
   {
    "date": "2026-09-19",
