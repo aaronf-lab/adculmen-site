@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18",
- "window": "2026-09-19 to 2026-11-18",
+ "generated": "2026-11-19",
+ "window": "2026-09-20 to 2026-11-19",
  "note": "Territory storms from SPC filtered storm reports (NWS local storm reports). Times Central; dates are local (Central) dates.",
  "items": [
   {
@@ -116,6 +116,31 @@
    "countyCount": 2,
    "source": "SPC storm reports (NWS LSRs)",
    "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261028_rpts.html"
+  },
+  {
+   "date": "2026-10-24",
+   "dateLabel": "Oct 24, 2026",
+   "state": "New Mexico",
+   "timeStart": "6:10 PM CDT",
+   "timeEnd": "8:10 PM CDT",
+   "location": "1 E White Sands, Dona Ana Co.",
+   "maxHailIn": 1.0,
+   "hailAt": "1 E White Sands, Dona Ana Co., 6:10 PM CDT",
+   "maxGustMph": 75,
+   "gustAt": "25 N Organ, Dona Ana Co.",
+   "hailReports": 3,
+   "windReports": 7,
+   "tornadoReports": 2,
+   "counties": [
+    "Dona Ana",
+    "Lincoln",
+    "Otero",
+    "Santa Fe",
+    "Sierra"
+   ],
+   "countyCount": 5,
+   "source": "SPC storm reports (NWS LSRs)",
+   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261024_rpts.html"
   },
   {
    "date": "2026-10-22",
@@ -287,32 +312,6 @@
    "countyCount": 2,
    "source": "SPC storm reports (NWS LSRs)",
    "sourceUrl": "https://www.spc.noaa.gov/climo/reports/261008_rpts.html"
-  },
-  {
-   "date": "2026-09-19",
-   "dateLabel": "Sep 19, 2026",
-   "state": "Colorado",
-   "timeStart": "3:00 PM CDT",
-   "timeEnd": "6:54 PM CDT",
-   "location": "7 SW Bethune, Kit Carson Co.",
-   "maxHailIn": 3.0,
-   "hailAt": "7 SW Bethune, Kit Carson Co., 6:20 PM CDT",
-   "maxGustMph": 66,
-   "gustAt": "3.3 ESE Byers, Arapahoe Co.",
-   "hailReports": 7,
-   "windReports": 2,
-   "tornadoReports": 0,
-   "counties": [
-    "Arapahoe",
-    "Elbert",
-    "Kit Carson",
-    "Lincoln",
-    "Rio Blanco",
-    "Teller"
-   ],
-   "countyCount": 6,
-   "source": "SPC storm reports (NWS LSRs)",
-   "sourceUrl": "https://www.spc.noaa.gov/climo/reports/260919_rpts.html"
   }
  ]
 }
